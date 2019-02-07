@@ -7,7 +7,7 @@ return (
     <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">{props.quote}}</p>
-    <a href="#" class="btn btn-primary">Next Quote!</a>
+    <a onClick={props.nextQuote} href="#" class="btn btn-primary">Next Quote!</a>
   </div>
 </div>
 )

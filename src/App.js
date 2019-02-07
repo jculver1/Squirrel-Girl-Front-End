@@ -29,19 +29,24 @@ class App extends Component {
       })
     }
 
-  // nextQuote = () => {
-
-  //   this.setState({
-  //     id: this.state.id + 1,
-  //     quote: this.state.data[id].quote,
-  //     img: this.state.data[id].img 
-  //   })
-  // }
+  nextQuote = () => {
+  let id = this.state.id
+  if(this.state.id < this.state.originalCount){
+    id = this.state.id + 1
+  }else{
+    id = 0
+  }
+    this.setState({
+      id: id,
+      quote: this.state.data[this.state.id].quote,
+      img: this.state.data[this.state.id].img 
+    })
+  }
 
   render() {
     return (
-      <div>
-        <Card img={this.state.img} quote={this.state.quote}/>
+      <div class='row'>
+        <Card img={this.state.img} quote={this.state.quote} nextQuote={this.nextQuote}/>
       </div>
     )
   }
