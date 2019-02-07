@@ -4,7 +4,6 @@ import Card from './components/card'
 
 class App extends Component {
 
-
   serverName = 'http://localhost:3005/'
 
   constructor(props) {
@@ -31,7 +30,7 @@ class App extends Component {
 
   nextQuote = () => {
   let id = this.state.id
-  if(this.state.id < this.state.originalCount){
+  if(this.state.id < this.state.originalCount -1){
     id = this.state.id + 1
   }else{
     id = 0
