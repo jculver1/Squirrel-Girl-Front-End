@@ -4,14 +4,19 @@
     align-self: center;
 } */
 
-.card-img-top {
+/* .card-img-top {
     height: 50rem;
     object-fit: cover;
-}
+} */
+/* 
+.card{
+    justify-content: center;
+} */
 
-.Header{
+h5{
     font-family: 'Bangers', cursive;
-    font-size: 100%;
+    font-size: 25px;
+  
 }
 
 .row{

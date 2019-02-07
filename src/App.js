@@ -48,7 +48,11 @@ class App extends Component {
       <div>
       <Header/>
       <div class='row'>
-        <Card img={this.state.img} quote={this.state.quote} nextQuote={this.nextQuote}/>
+        <div class='col-3'></div>
+        <div class='col-6'>
+          <Card img={this.state.img} quote={this.state.quote} nextQuote={this.nextQuote}/>
+        </div>
+        <div class='col-3'></div>
       </div>
       <div class='row mt-5 pt-5'></div>
       </div>
