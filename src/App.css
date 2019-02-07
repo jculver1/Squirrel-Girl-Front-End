@@ -1,7 +1,12 @@
-.card-img-top {
+/* .card-img-top {
     width: 50%;
     height: 50%;
     align-self: center;
+} */
+
+.card-img-top {
+    height: 50rem;
+    object-fit: cover;
 }
 
 .row{

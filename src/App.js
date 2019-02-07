@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Card from './components/card'
+import Header from './components/header'
 
 class App extends Component {
 
@@ -44,8 +45,11 @@ class App extends Component {
 
   render() {
     return (
+      <div>
+      <Header/>
       <div class='row'>
         <Card img={this.state.img} quote={this.state.quote} nextQuote={this.nextQuote}/>
+      </div>
       </div>
     )
   }
