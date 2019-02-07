@@ -7,13 +7,13 @@ class App extends Component {
 
   serverName = 'http://localhost:3005/'
 
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     data: {},
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: {},
 
-  //   };
-  // }
+    };
+  }
 
   async componentDidMount(){
     fetch(this.serverName)
@@ -22,18 +22,26 @@ class App extends Component {
         this.setState({
           data: JSONdata,
           originalCount: JSONdata.length,
-          quotes: JSONdata.map(sg => sg.quote),
-          img: JSONdata.map(sg => sg.img)
+          id: JSONdata[0].id,
+          quote: JSONdata[0].quote,
+          img: JSONdata[0].img
         })
       })
     }
 
-  current
+  // nextQuote = () => {
+
+  //   this.setState({
+  //     id: this.state.id + 1,
+  //     quote: this.state.data[id].quote,
+  //     img: this.state.data[id].img 
+  //   })
+  // }
 
   render() {
     return (
       <div>
-        <Card/>
+        <Card img={this.state.img} quote={this.state.quote}/>
       </div>
     )
   }
