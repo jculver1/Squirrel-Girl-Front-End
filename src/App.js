@@ -50,6 +50,7 @@ class App extends Component {
       <div class='row'>
         <Card img={this.state.img} quote={this.state.quote} nextQuote={this.nextQuote}/>
       </div>
+      <div class='row mt-5 pt-5'></div>
       </div>
     )
   }

@@ -9,6 +9,12 @@
     object-fit: cover;
 }
 
+.Header{
+    font-family: 'Bangers', cursive;
+    font-size: 100%;
+}
+
 .row{
     justify-content: center;
+    font-family: 'Open Sans', sans-serif;
 }
